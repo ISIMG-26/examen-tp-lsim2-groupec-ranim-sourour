@@ -1,0 +1,18 @@
+<?php
+include("config.php");
+$sql = "SELECT * FROM products";
+$result = $conn->query($sql);
+while($row = $result->fetch_assoc()) {
+    echo "<div class='card'>";
+    echo "<h3>".$row['nom']."</h3>";
+    echo "<p>".$row['description']."</p>";
+    echo "<p>".$row['prix']." DT</p>";
+    echo "<form action='php/add_to_cart.php' method='POST'>
+            <input type='hidden' name='nom' value='".$row['nom']."'>
+            <input type='hidden' name='prix' value='".$row['prix']."'>
+            <button type='submit'>Ajouter au panier</button>
+          </form>";
+
+    echo "</div>";
+}
+?>
