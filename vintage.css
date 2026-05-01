@@ -1,0 +1,210 @@
+
+body {
+    font-family: "Georgia", serif;
+    background: url("/images/castle.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #3e2c23;
+}
+body.home {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/castle1.jpg") no repeat center center fixed;
+    background-size: cover;       
+    font-family: "Georgia", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 220, 0.85); 
+    z-index: -1;
+}
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    color: #5c4033;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+header {
+     background: linear-gradient(to right, #5c4033, #8b5e3c);
+    color: #f5f5dc;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #c2b280;
+} 
+nav a {
+    color: #5a3e2b;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+.card {
+    background: linear-gradient(to bottom, #f5f5dc, #e6d5b8);
+    border: 1px solid #c2b280;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    width: 220px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.card2 {
+    width: 200px;
+    background: linear-gradient(to bottom, #f5f5dc, #e6d5b8);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card2 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #c2b280;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", serif;
+}
+
+button {
+    background: linear-gradient(to right, #8b5e3c, #5c4033);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #5c4033;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cat-card {
+    width: 200px;
+    background: linear-gradient(to bottom, #f5f5dc, #e6d5b8);
+    border-radius: 12px;
+    text-decoration: none;
+    color: #3e2c23;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.cat-card:hover {
+    transform: scale(1.05);
+}
+.cat-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.cat-card h3 {
+    margin: 10px 0;
+}
+.title-container {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 40vh;              
+}
+
+.section-title {
+    font-size: 36px;
+    color: #5c4033;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+.heart-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.heart-icon{
+    width: 28px;
+    height: 28px;
+    fill: none;        
+    stroke: black;    
+    stroke-width: 2;
+    transition: 0.3s;
+}
+
+.heart-btn.active .heart-icon{
+    fill: red;
+    stroke: red;
+    transform: scale(1.2);
+}
+
+.btn-container{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #8b5e3c, #5c4033);
+    color: #f5f5dc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
